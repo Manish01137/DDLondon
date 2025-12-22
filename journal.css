@@ -1,0 +1,628 @@
+/* ================= BASE ================= */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Georgia", serif;
+    background: #fff;
+    color: #111;
+    overflow-x: hidden;
+  }
+  
+  /* ================= NAVBAR ================= */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 100;
+  }
+  
+  .navbar nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+  }
+  
+  /* ================= HERO ================= */
+  .journal-hero {
+    padding: 220px 60px 160px;
+    text-align: center;
+  }
+  
+  .journal-hero h1 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+  
+  .journal-hero em {
+    font-style: italic;
+  }
+  
+  /* ================= JOURNAL ================= */
+  .journal-section {
+    padding: 140px 80px;
+  }
+  
+  .journal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .journal-grid img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    transition: transform 1.2s ease;
+  }
+  
+  .journal-grid img:hover {
+    transform: scale(1.04);
+  }
+  
+  .caption {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* ================= FOOTER ================= */
+  .footer {
+    background: #000;
+    color: #fff;
+    padding: 120px 80px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .footer input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #fff;
+    width: 260px;
+    padding: 10px 0;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .footer-logo {
+    font-size: 120px;
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 900px) {
+    .journal-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .journal-grid img {
+      height: 360px;
+    }
+  
+    .navbar {
+      padding: 20px;
+    }
+  
+    .journal-hero h1 {
+      font-size: 30px;
+    }
+  }
+  /* =============================
+   JOURNAL HERO TYPOGRAPHY
+============================= */
+.journal-hero {
+    padding: 220px 60px 180px;
+    text-align: center;
+  }
+  
+  .journal-hero h1 {
+    font-family: "Times New Roman", "Didot", "Bodoni MT", serif;
+    font-size: 52px;
+    font-weight: 300;              /* THIN */
+    letter-spacing: 0.12em;        /* DD London spacing */
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: #111;
+  }
+  
+  /* second line slightly tighter */
+  .journal-hero h1 br + * {
+    letter-spacing: 0.10em;
+  }
+  
+  /* italic AND */
+  .journal-hero h1 em {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+  }
+  
+  /* =============================
+     MOBILE REFINEMENT
+  ============================= */
+  @media (max-width: 768px) {
+    .journal-hero {
+      padding: 160px 20px 120px;
+    }
+  
+    .journal-hero h1 {
+      font-size: 30px;
+      letter-spacing: 0.08em;
+      line-height: 1.4;
+    }
+  }
+  /* ================= HERO TEXT ================= */
+.journal-hero {
+    padding: 220px 60px 160px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .journal-hero h1 {
+    font-family: "Times New Roman", "Didot", "Bodoni MT", serif;
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: #111;
+  }
+  
+  .journal-hero h1 em {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+  }
+  
+  /* ================= HERO IMAGE ================= */
+  .journal-hero-image {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .journal-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* ================= IMAGE CAPTION ================= */
+  .hero-caption {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    color: #fff;
+  }
+  
+  .hero-caption small {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+  
+  .hero-caption p {
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 768px) {
+    .journal-hero {
+      padding: 160px 20px 120px;
+    }
+  
+    .journal-hero h1 {
+      font-size: 30px;
+      letter-spacing: 0.08em;
+    }
+  
+    .journal-hero-image {
+      height: 60vh;
+    }
+  
+    .hero-caption {
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+  /* =============================
+   TIGHT JOURNAL SPACING
+============================= */
+.journal-section {
+    padding: 70px 80px;     /* was 140px → reduced */
+  }
+  
+  /* remove extra space below captions */
+  .caption {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
+  /* ensure images don’t add space */
+  .journal-grid img {
+    display: block;
+  }
+  .journal-section {
+    padding: 50px 80px;
+  }
+  @media (max-width: 768px) {
+    .journal-section {
+      padding: 40px 20px;
+    }
+  }
+  /* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+  
+  /* DESKTOP NAV */
+  .navbar nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  /* ================= HAMBURGER ================= */
+  #nav-toggle {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 22px;
+    height: 1px;
+    background: #111;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 20px;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .navbar nav {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 40px 0;
+      transform: translateY(-120%);
+      transition: transform 0.5s ease;
+    }
+  
+    #nav-toggle:checked ~ nav {
+      transform: translateY(0);
+    }
+  }
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+  
+  /* NAV LINKS */
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  /* ================= HAMBURGER ================= */
+  #nav-toggle {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 22px;
+    height: 1px;
+    background: #111;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 20px;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-menu {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 50px 0;
+      transform: translateY(-120%);
+      transition: transform 0.5s ease;
+    }
+  
+    /* ✅ THIS NOW WORKS */
+    #nav-toggle:checked + .nav-menu {
+      transform: translateY(0);
+    }
+  }
+    /* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 9999; /* VERY IMPORTANT */
+  }
+  
+  .logo {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+  
+  /* NAV MENU DESKTOP */
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  /* HIDE CHECKBOX */
+  #nav-toggle {
+    display: none;
+  }
+  
+  /* HAMBURGER DEFAULT (HIDDEN ON DESKTOP) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10000; /* FIX */
+  }
+  
+  .hamburger span {
+    width: 22px;
+    height: 1px;
+    background: #111;
+    margin: 6px 0;
+  }
+  
+  /* ================= MOBILE ================= */
+  @media (max-width: 768px) {
+  
+    /* SHOW HAMBURGER */
+    .hamburger {
+      display: flex !important;
+    }
+  
+    /* HIDE MENU INITIALLY */
+    .nav-menu {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      padding: 40px 0;
+      transform: translateY(-120%);
+      transition: transform 0.4s ease;
+    }
+  
+    /* OPEN MENU */
+    #nav-toggle:checked + .nav-menu {
+      transform: translateY(0);
+    }
+  }
+  /* =============================
+   FOOTER BASE
+============================= */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 140px 80px 100px;
+    font-family: "Times New Roman", "Didot", serif;
+  }
+  
+  /* =============================
+     FOOTER TOP
+  ============================= */
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 140px;
+  }
+  
+  .footer-top small {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 16px;
+  }
+  
+  .footer-top h3 {
+    font-size: 28px;
+    font-weight: 300;   /* THIN */
+    margin-bottom: 30px;
+  }
+  
+  /* INPUT */
+  .footer input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 320px;
+    outline: none;
+  }
+  
+  .footer input::placeholder {
+    color: rgba(255,255,255,0.4);
+  }
+  
+  /* =============================
+     FOOTER BOTTOM
+  ============================= */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+  }
+  
+  /* DDL LOGO – THIN & ELEGANT */
+  .footer-logo {
+    font-size: 140px;
+    font-weight: 200;        /* VERY THIN */
+    letter-spacing: 0.08em;
+    line-height: 1;
+    opacity: 0.9;
+  }
+  
+  /* INFO */
+  .footer-info p {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-bottom: 10px;
+  }
+  
+  /* =============================
+     MOBILE RESPONSIVE
+  ============================= */
+  @media (max-width: 768px) {
+  
+    .footer {
+      padding: 100px 24px 80px;
+    }
+  
+    .footer-top {
+      flex-direction: column;
+      gap: 60px;
+      margin-bottom: 100px;
+    }
+  
+    .footer-top h3 {
+      font-size: 22px;
+    }
+  
+    .footer input {
+      width: 100%;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+    }
+  
+    .footer-logo {
+      font-size: 90px;      /* smaller on mobile */
+      letter-spacing: 0.06em;
+    }
+  }
+  
